@@ -9,8 +9,43 @@ main {
 }
 
 body {
-background-image: url(img/background2.avif) ; 
+background-color: #FFDAB9; 
 background-size: 100%;
+}
+/* ANIMATION CARRE COULEUR */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.animation-container {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.animated-image {
+  border-radius: 20px;
+  z-index: -1;
+  width: 3%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(1000%) rotate(0deg);
+  animation-name: vertical-rotation;
+  animation-duration: 15s; /* Ajuste la durée de l'animation selon tes besoins */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes vertical-rotation {
+  0% {
+    transform: translateX(-50%) translateY(200%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-1800%) rotate(360deg);
+  }
 }
 /* QUI SUIS JE */
 .articlePresentation{
@@ -35,51 +70,63 @@ background-size: 100%;
 .titrepresentation{
   font-size: x-large;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: #969ed3;
-  text-shadow: 4px 2px 0px #c8cada;
+  color: #BDB76B;
+  text-shadow: 4px 2px 0px #EEE8AA;
 }
 
 
 /* rezize image */
-.sectionimgpresentation img{
-  border-radius: 15px;
+.imagepresentation{
+  justify-content: left;
+  gap: 80px;
+}
+
+.image-container {
+  z-index: 0;
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  width: 25%;
+}
+
+.image-container img {
+  z-index: 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  opacity: 70%;
   transition: 0.4s;
 }
 
-.sectionimgpresentation img:hover{
-  transform: scale(1.02);
+.image-container img:hover{
+  opacity: 100%;
 }
 
+.image-container .image-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
 
-.imgsport{
-  width: 51%;
-  max-width: 51%;
+.image-container:hover .image-caption {
+  opacity: 0;
 }
-.imgsport:hover{
-opacity: 80%;
-}
-
-.imgmontagne{
-  width: 82%;
-  max-width: 88%;
-}
-.imgmontagne:hover{
-  opacity: 80%;
-  }
-
-.imgmontagne_cham{
-  width: 58%;
-  max-width: 58%;
-}
-.imgmontagne_cham:hover{
-  opacity: 80%;
-  }
 /* barre de nav */
 header nav ul{
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 50px;
+}
+p{
+ color: #ada529;
 }
 h1{
 font-family: policeh1;  
@@ -103,7 +150,7 @@ li{
   
 }
 header nav ul li:hover{
-opacity: 50%;
+
 }
 
 nav ul li{
@@ -122,6 +169,8 @@ nav ul li a{
   
 }
 
+
+
 @font-face {
   font-family: policeh1;
   src: url(police/Montserrat-SemiBold.ttf);
@@ -137,45 +186,35 @@ nav ul li a{
 /* CSS POUR LES BOUTONS*/
 .button-51 {
   background-color: transparent;
-  border: 1px solid #266DB6;
+  border: 1px solid #BDB76B;
   box-sizing: border-box;
-  color: #00132C;
-  font-family: "Avenir Next LT W01 Bold",sans-serif;
-  font-size: 16px;
-  font-weight: 700;
   line-height: 24px;
-  padding: 16px 23px;
   position: relative;
-  text-decoration: none;
   user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  transition: 0.6s;
 }
 
-.button-51:hover,
-.button-51:active {
-  outline: 0;
-}
+
 
 .button-51:hover {
-  background-color: transparent;
-  cursor: pointer;
+color: #b4ad4e;
 }
 
 .button-51:before {
-  background-color: #cad0f1;
+  background-color: #FFFACD;
   content: "";
   height: calc(100% + 3px);
   position: absolute;
   right: -7px;
   top: -9px;
-  transition: background-color 300ms ease-in;
+  transition: 300ms ease-in;
   width: 100%;
   z-index: -1;
 }
 
 .button-51:hover:before {
-  background-color: #6db8f6;
+  right: 0px;
+  top: 0px;
 }
 
 @media (min-width: 768px) {
@@ -184,6 +223,15 @@ nav ul li a{
   }
 }
 /*  Fin CSS POUR LES BOUTONS*/
+.image-container p{
+  z-index: 2;
+  color: wheat;
+  font-weight: 800;
+  font-size: xx-large;
+  text-shadow: 2px 2px 10px rgb(150, 124, 75);
+}
+
+
 
 /*--------- FORMULAIRE -----------------*/
 
@@ -249,23 +297,20 @@ button[type="submit"]:hover {
   border-radius: 8%;
   margin-left: 20px;
   transition: transform 0.6s;
-  box-shadow: 2px 5px 9px #266DB6;
+  box-shadow: 6px 5px 0px #BDB76B;
+  transition: 0.4S;
 }
 
 .pp:hover{
   transform: scale(1.03);
-  box-shadow: 2px 5px 9px #6d7985;
+  box-shadow: 3px 5px 0px #EEE8AA;
 }
 
 .gauche{
   width: fit-content;
   max-width: 500px;
 }
-nav ul li:hover{
-  transform: scale(1.02);
-  box-shadow: #00132C;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-}
+
 
 .gauche ul li:hover{
   transform: scale(1.02);
@@ -275,8 +320,8 @@ nav ul li:hover{
 
 .nom{
   margin-left: 20px;
-  color: #7178b3;
-  text-shadow: 4px 2px 0px #c8cada;
+  color: #BDB76B;
+  text-shadow: 4px 2px 0px #EEE8AA;
 }
 
 .presentation{
@@ -329,8 +374,8 @@ nav ul li:hover{
 
 .titre {
   position: relative;
-  color: #989ece;
-  text-shadow: 4px 2px 0px #c8cada;
+  color: #BDB76B;
+  text-shadow: 4px 2px 0px #EEE8AA;
   font-size: xx-large;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   transition: 0.5s;
@@ -339,14 +384,14 @@ nav ul li:hover{
 .titre:hover {
   transform: scale(1.02);
   text-shadow: none;
-  color: #989ece;
+  color: #8f8635;
 }
 h2{
   transition: 0.5s; 
 }
 h2:hover{
     transform: scale(1.02);
-    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 5px 10px #FFFACD;
 }
 
 .titre::after {
@@ -357,7 +402,7 @@ h2:hover{
   width: 0;
   height: 1px;
   border-radius: 5px;
-  background-color: #266DB6;
+  background-color: #FFFACD;
   transition: width 0.5s ease-in-out;
 }
 

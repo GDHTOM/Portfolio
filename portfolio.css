@@ -35,6 +35,8 @@ background-size: 100%;
 .titrepresentation{
   font-size: x-large;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #969ed3;
+  text-shadow: 4px 2px 0px #c8cada;
 }
 
 
@@ -58,7 +60,7 @@ opacity: 80%;
 }
 
 .imgmontagne{
-  width: 88%;
+  width: 82%;
   max-width: 88%;
 }
 .imgmontagne:hover{
@@ -247,11 +249,12 @@ button[type="submit"]:hover {
   border-radius: 8%;
   margin-left: 20px;
   transition: transform 0.6s;
+  box-shadow: 2px 5px 9px #266DB6;
 }
 
 .pp:hover{
   transform: scale(1.03);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 5px 9px #6d7985;
 }
 
 .gauche{
@@ -272,17 +275,20 @@ nav ul li:hover{
 
 .nom{
   margin-left: 20px;
+  color: #7178b3;
+  text-shadow: 4px 2px 0px #c8cada;
 }
 
 .presentation{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .presentationAside{
   display: flex;
   flex-direction: column;
   margin: 15px;
   justify-content: center;
+  width: 90%;
 }
 
 .articlePresentation{
@@ -292,7 +298,7 @@ nav ul li:hover{
 .articlePresentation img{
   width: 60%;
   height: 60%;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-left: 5px;
 
 }
@@ -320,19 +326,20 @@ nav ul li:hover{
   color:rgb(211, 0, 0);
 }
 
-.titre{
+
+.titre {
+  position: relative;
+  color: #989ece;
+  text-shadow: 4px 2px 0px #c8cada;
   font-size: xx-large;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   transition: 0.5s;
 }
 
-.titre {
-  position: relative;
-}
-
 .titre:hover {
   transform: scale(1.02);
-  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: none;
+  color: #989ece;
 }
 h2{
   transition: 0.5s; 
@@ -348,8 +355,9 @@ h2:hover{
   left: 0;
   bottom: -2px;
   width: 0;
-  height: 2px;
-  background-color: black;
+  height: 1px;
+  border-radius: 5px;
+  background-color: #266DB6;
   transition: width 0.5s ease-in-out;
 }
 
@@ -436,7 +444,7 @@ h2:hover{
 }
 .atosimg{
   border-radius: 20px;
-  width: 25%;
+  width: 65%;
   height: 25%;
   max-width: 25%;
   max-height: 25%;

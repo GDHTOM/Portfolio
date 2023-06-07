@@ -1,270 +1,233 @@
 <!DOCTYPE html>
-  <html lang="fr">
-    <head>
-      <meta charset="UTF-8">
-      <title>Mon portfolio</title>
-      <link rel="stylesheet" href="portfolio.css"> <!-- Feuille de style principale -->
-     
-    </head>
+<html lang="fr">
 
-    <body>
+<head>
+  <meta charset="UTF-8">
+  <title>Mon portfolio</title>
+  <link rel="stylesheet" href="portfolio.css"> <!-- Feuille de style principale -->
 
-        <!-- 
+</head>
+
+<body>
+
+  <!-- 
           Barre de navigation principale.
           À noter : le lien actif contient un nom de classe "actif"
         -->
-      <header>
-        <nav>
-          <ul>
-            <li><a class="actif" href="index.html" id="haut"><button class="button-51" role="button">ACCUEIL</button></a></li>
-            <li><a href="qui-suis-je.html"><button class="button-51" role="button">ME CONNAITRE</button></a></li>
-            <li><a href="mes-projets.html"><button class="button-51" role="button">MES PROJETS</button></a></li>
-            <li><a href="me-contacter.html"><button class="button-51" role="button">CONTACT</button></a></li>
-          </ul>
-        </nav>
-      </header>
+  <header>
+    <nav>
+      <ul>
+        <li><a class="actif" href="index.html" id="haut"><button class="button-51" role="button">ACCUEIL</button></a>
+        </li>
+        <li><a href="qui-suis-je.html"><button class="button-51" role="button">ME CONNAITRE</button></a></li>
+        <li><a href="mes-projets.html"><button class="button-51" role="button">MES PROJETS</button></a></li>
+        <li><a href="me-contacter.html"><button class="button-51" role="button">CONTACT</button></a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <main>
+  <main>
 
-        <!-- 
+    <!-- 
           Menu latéral montrant une photo de profil
           ainsi que des informations personnelles
         -->
-        <aside class="gauche">
+    <aside class="gauche">
 
-          <!-- Photo de profil à remplacer -->
-          
-            <img src="./img/photo de profil.jpg" class="pp"  alt="Photo de profil">
+      <!-- Photo de profil à remplacer -->
 
-          <!-- Informations personnelles -->
-          <h2 class="nom">Jochum Tom</h2>
-          <ul>
-            <li>&#128100; Étudiant en première année du BUT informatique</li>
-            <li>&#128205; IUT2 Place Doyen Gosse Grenoble</li>
-            <li>&#128381; 0699702164</li>
-          </ul>
-          <nav>
-            <ul>
-              <li><a href="https://github.com/GDHTOM" target="_blank">Github</a></li>
-              <li><a href="https://twitter.com/GdhTom" target="_blank">Twitter</a></li>
-              <li><a href="https://www.youtube.com/@tomjochum8415/videos" target="_blank">Youtube</a></li>
+      <img src="./img/photo de profil.jpg" class="pp" alt="Photo de profil">
 
-              <li><a href="https://www.instagram.com/tomjochum/?hl=fr" target="_blank">Instagram</a></li>
-            </ul>
-          </nav>
-        </aside>
+      <!-- Informations personnelles -->
+      <h2 class="nom">Jochum Tom</h2>
+      <ul>
+        <li>&#128100; Étudiant en première année du BUT informatique</li>
+        <li>&#128205; IUT2 Place Doyen Gosse Grenoble</li>
+        <li>&#128381; 0699702164</li>
+      </ul>
+      <nav>
+        <ul>
+          <li><a href="https://github.com/GDHTOM" target="_blank">Github</a></li>
+          <li><a href="https://twitter.com/GdhTom" target="_blank">Twitter</a></li>
+          <li><a href="https://www.youtube.com/@tomjochum8415/videos" target="_blank">Youtube</a></li>
 
-        <!-- Le contenu principal apparait ici -->
-        <article>
-          
+          <li><a href="https://www.instagram.com/tomjochum/?hl=fr" target="_blank">Instagram</a></li>
+        </ul>
+      </nav>
+    </aside>
 
-          <!-- Titre de la page -->
-          <h1 class="titre" class="">Mes projets</h1>
-          <h2>Etude Statistique d'une base de données sur le naufrage du Titanic</h2>
-          <section class="titanic">
-            <img src="img/titanic.jfif" alt="" class="titanicimg">
-            <article class="articleProjet">
-              <p class="ps">Projet réalisé en binome</p>
- <p>
-            Ce projet d'étude se concentre sur l'analyse des données recoltées
-            sur le naufrages du célèbre paquebot "Titanic". <br>
-            Les données étaient présenté sous forme de tableau excel, il fallu ensuite
-            les triées pour les insérer une base données postgresql.
-            <br><br>
-            L'entierté de l'analyse à ensuite été réalisé dans le language sql et nottament
-            toute l'exploration de la base à l'aide de requêtes et autres possibilitées
-            qu'offre le language sql. <br><br>
-            Ce projet m'a permis d'améliorer ma maitrise du language sql et de travailler en équipe
-            de façon méthodique avec mon binome.
-          </p>
-            </article>
+    <!-- Le contenu principal apparait ici -->
+    <article>
 
-         
-        </section>
-        
-          <h2> Étude de l'accidentologie des moins de 18 ans dans la région Grand Est (2006-2021)</h2>
-          <section class="accident">
-            <aside class="asideaccidentimg">
 
-           
-            <img src="img/accident.jpg" alt="" class="accidentimg">
-            <img src="img/transfo.png" alt="" class="accidentimg">
-            <img src="img/graphe.jpg" alt="" class="accidentimg">
-           </aside>
-            <article class="articleProjet">
-              <p class="ps">Projet réalisé en binome</p>
-
-            
+      <!-- Titre de la page -->
+      <h1 class="titre" class="">Mes projets</h1>
+      <h2>Etude statistique d'une base de données sur le naufrage du Titanic</h2>
+      <section class="titanic">
+        <img src="img/titanic.jfif" alt="" class="titanicimg">
+        <article class="articleProjet">
+          <p class="ps">Projet réalisé en binome</p>
+          <h4>Résumé du projet</h4>
           <p>
-            Ce projet d'étude se concentre sur l'analyse de l'accidentologie concernant les personnes 
-            de moins de 18 ans dans la région Grand Est sur une période de 15 ans, allant de 2006 à 
-            2021. <br>
-            La méthodologie utilisée repose sur une analyse approfondie des bases de données relatives aux accidents.
-            Ces données ont été collectées auprès des services de gendarmerie. Les informations recueillies incluent le type 
-            d'accident, le lieu, la période de l'année, les circonstances, les types de véhicules 
-            impliqués, les blessures subies, etc. <br><br>
-            Ce projet d'étude s'est déroulé en trois étapes clés : le nettoyage de la base de données, 
-            la transformation des données et l'analyse, toutes réalisées à l'aide du langage SQL
+            Ce projet d'étude est une analyse d'une base de données
+            sur le naufrages du célèbre paquebot "Titanic". <br></p>
+          <h4>Compétences travaillées</h4>
+          <p>
+            L'analyse et l'exploration de la base de données ont été réalisées dans le language Sql.
             <br>
-           <h3> 1. Nettoyage de la base de données :</h3>
-           <p>
-          
-             La première étape consistait à nettoyer la base de données initiale afin de garantir 
-             la qualité et la fiabilité des données utilisées dans l'étude
-            </p>
-             <br>
-             <h3>2. Transformation des données :</h3>
-             <p>
-             Une fois la base de données nettoyée, la deuxième étape consistait à transformer 
-             les données brutes en une forme plus exploitable pour l'analyse.
-            </p>
-             <br>
-             <h3>3. Interprétation des données</h3>
-             <p>
+            L'amélioration de ma maitrise du language sql et du travaille en équipe
+            de façon méthodique avec mon binôme.
+          </p>
+        </article>
 
-             Une fois les données nettoyées et transformées, la troisième étape 
-             consistait à effectuer une analyse approfondie à l'aide du langage SQL.
-             Cela s'apparente à des requêtes complexes, des agrégations, des regroupements, 
-             des jointures et des calculs statistiques sur les données afin
-             d'extraire des informations clés sur l'accidentologie des moins de 18 ans dans la région Grand Est.
-             <h3>4. Utilisation des données</h3>
-             <p>Nous avons ensuite réalisé un rapport analytique écrit en français et en anglais sur ce theme. Le
-              rapport à été réalisé sur Rstudio afin de réalisé des graphiques grâces aux données obtenues lors des 
-              étapes précedentes ainsi nous avons pu exploiter nos données et les interpreter.
-            <br><br>
-            Ce projet m'a permis d'approfondir mes connaissances et ma maitrise de la base données
-            dans tout ses aspects.
-             </p>
-            </p>
+
+      </section>
+
+      <h2> Étude de l'accidentologie des moins de 18 ans dans la région Grand Est (2006-2021)</h2>
+      <section class="accident">
+        <aside class="asideaccidentimg">
+
+
+          <img src="img/accident.jpg" alt="" class="accidentimg">
+
+        </aside>
+        <article class="articleProjet">
+          <p class="ps">Projet réalisé en binome</p>
+          <h4>Résumé du projet</h4>
+          <p>
+            Ce projet d'étude se concentre sur l'analyse d'une base de données sur l'accidentologie
+            des personnes de moins de 18 ans dans la région Grand Est sur une période
+            de 15 ans, de 2006 à 2021.
+            Nous avons complété ce projet avec une analyse statistique et un rapport d'analyse rédigé en anglais.
+
+          </p>
+          <h4>Compétences travaillées</h4>
+          <p>
+            Le nettoyage de la
+            base de données, la transformation des données et leur analyse,
+            tout cela réalisées en utilisant le langage SQL. <br>
+            Approfondir les connaissances et la maîtrise de
+            la base de données dans tous ses aspects. <br>
+            Maitrise du logiciel Rstudio. <br>
+            Rédaction professionnel d'un rapport.
 
 
           </p>
+
+
+
         </article>
 
       </section>
-          <h2>Création d'un programme java de trie automatisé de depeche journalistique</h2>
-          <section class="java">
-            <img src="img/java.jfif" alt="" class="javaimg">
-            <article class="articleProjet">
-              <p class="ps">Projet réalisé en binome</p>
- <p>
-            Ce projet d'étude est la création d'un programme en java capable dans sa 
-          forme final d'analyser un depeche journalistique et d'un déduire son sujet principal parmis
-          4 grandes catégories. <br><br> Le programme fonctionnait de sorte que à l'aide d'un
-          lexique de mot possédant un poid d'importance selon lesmots, alors le progremme
-          comparait la depeche aux mots trouvé dans le lexique <br>
-          <br>
-            Ainsi le programme à été testé sur des lexiques que nous avions réalisé
-            nous même puis ensuite il était capable de se créer et d'alimenter lui même
-            un lexique réalisé donc automatiquement
-            <br><br>Ce projet m'a initier au travail d'équipe dans la programmation d'un
-            programme java.
+      <h2>Création d'un programme java de tri automatisée de dépêche journalistique</h2>
+      <section class="java">
+        <img src="img/java.jfif" alt="" class="javaimg">
+        <article class="articleProjet">
+          <p class="ps">Projet réalisé en binome</p>
+          <h4>Résumé du projet</h4>
+          <p>
+            Ce projet d'étude consiste à créer un programme en Java capable
+            d'analyser une dépêche journalistique et de déduire son sujet
+            principal parmi quatre grandes catégories. Le programme utilise
+            un lexique de mots avec des poids d'importance attribués à chaque
+            mot. En comparant la dépêche aux mots du lexique, le programme
+            effectue son analyse.
+            Nous avons également rédigé un rapport en anglais de notre programme.
           </p>
-            </article>
-          </section>
-
-          <h2>Installation d'un poste de travail pour le développement</h2>
-          <section class="install">
-            <img src="img/debian.jpg" alt="" class="debianimg">
-            <article class="articleProjet">
-              <p class="ps">Projet réalisé seul</p>
- 
-           <h3>Installation des logiciels sur machine virtuel :</h3>
-           <ul>
-            <li>Debian 11 avec KDE/Plasma </li>
-            <li>JDK et git en utilisant des packages Debian.</li>
-            <li>IntelliJ IDEA Community installé de trois manières différentes.</li>
-          
-           </ul>
-           <br><br>
-           <p>
-           Tout le projet s'est réalisé en autonomie et me permet désormais de pouvoir 
-           installer de moi même mon poste de travail de développeur
-            <br><br>Ce projet m'a permis de pouvoir devenir autonome dans l'Installation
-            de mon poste de travail.
+          <h4>Compétences travaillées</h4>
+          <p>
+            Maitrise du language de programmation Java <br>
+            Acquérir une expérience de travail d'équipe dans la programmation d'un programme. <br>
+            Rédaction d'un rapport en anglais.
           </p>
-            </article>
-          </section>
-
-          <h2>création du site web institutionnel d’une entreprise du secteur numérique <br> à destination de la génération Alpha</h2>
-          <section class="website">
-            <img src="img/atos.png" alt="" class="atosimg">
-            <article class="articleProjet">
-              <p class="ps">Projet réalisé en trio</p>
- 
-           <h3>Création d'un recueil de besoin</h3>
-           <br>
-           <p>
-            Le but était de ce projet était de réalisé un site web institutionnel d’une entreprise du secteur numérique à destination de 
-            génération alpha. Ainsi nous avons choissi pour notre projet l'entreprise de services numériques Atos. <br> 
-            Nous avons réalisé un recueil de besoins est un processus qui dans la gestion de notre projet nous a 
-            permis de nous documenter et de comprendre les 
-            besoins et attentes des parties prenantes d'un projet. Sa création nous a aidé à définir clairement ce que 
-            le projet doit accomplir et quelles sont les fonctionnalités, caractéristiques et contraintes
-             requises
-            
-          </p>
-          <h3>Conception et de la réalisation du site Internet en HTML/CSS</h3>
-          <p>Nous avons tout d'abord réalisé à la suite de notre recueil de besoin une wireframe, sois une maquette
-            de notre site et de ses fonctionnalité puis nous avons pu passer à la réalistaion du site internet.
-            <br><br>Ce projet m'a permis de comprendre tout le processus derrière la création d'un site web, c'est à dire 
-            comprendre le besoin client, puis l'apliquer à la création du site et tout ça dans une cohésion
-            de travail avec mes collègues de projet.
-            
-            <br><br> <a href="https://gdhtom.github.io/ATOS/" target="_blank" class="lien">Le site est disponible juste ici</a> .
-          </p>
-            </article>
-          </section>
-          <h2>Création d'un site web pour un client</h2>
-          <section class="woippy">
-            <aside class="asidewoippyimg">
-            <img src="img/echange_client.png" alt="" class="woippyimg">
-            <img src="img/realisation_site.jpg" alt="" class="woippyimg">
-             </aside>
-            <article class="articleProjet">
-              <p class="ps">Projet réalisé en duo</p>
-
-           <h3>Échange avec le client</h3>
-           <br>
-           <p>
-            Dans un premier temp, nous avons du communiquer en anglais par oral et
-            mail avec notre client afin de comprendre leur envies et ambition pour
-            leur site internet. Ensuite les clients nous ont fournie un wireframe ainsi
-            qu'un descriptif de toute la charte graphique qu'ils souhaitaient que l'on suive.
-          
-          </p>
-          <h3>Réalisation du site Internet en HTML/CSS</h3>
-          <p>Nous avons donc réalisé à la suite de nos échange avec le client
-            le site et ses fonctionnalité en respectant les élements important imposé
-            tel que l'experience utlisateur voulu, la cible touché par le site, tout 
-            l'aspect gaphique, etc... 
-          </p>
-          <h3>Suivie et bilan avec le client</h3>
-          <p>Nous avons ensuite pu présenté une première version du site à notre
-            client qui a donc réalisé un retour et à pu nous aiguiller de manière
-            encore plus précise sur ses attentes. <br> Quelques semaines
-            plus tard à donc eu lieu le rendez-vous final où nous avons présenté
-            la version finale de notre site à notre client qui à réalisé son dernier
-            retour. <br><br> Ce projet m'a permis de découvrir la relation entre un developpeur et 
-            un client ainsi que tout le suivie entre les différentes version du site afin
-            qu'il corresponde bien aux attentes du client.
-            <br><br>
-            <a href="https://gdhtom.github.io" target="_blank" class="lien">Le site est disponible juste ici</a> .
-          </p>
-           
-            </article>
-          </section>
         </article>
+      </section>
 
-      </main>
-      <a href="#haut"><img src="img/fleche.png" class="fleche" alt=""></a>
-      
+      <h2>Installation d'un poste de travail pour le développement</h2>
+      <section class="install">
+        <img src="img/debian.jpg" alt="" class="debianimg">
+        <article class="articleProjet">
+          <p class="ps">Projet réalisé seul</p>
 
-      <!-- Barre des réseaux sociaux -->
-      <footer>
-      <p>Made By GDH "Tom Jochum"</p>
-      </footer>
-    </body>
-  </html>
+          <h4>Résumé du projet</h4>
+          <p>
+            Ce projet consiste à installer les logiciels nécessaires sur une machine virtuelle
+            afin d'en réaliser un poste de travail. Debian 11 avec KDE/Plasma , JDK et git avec des
+            packages Debian et l'IDE IntelliJ IDEA Community ont été installé.
+
+          </p>
+          <h4>Compétences travaillées</h4>
+          <p>
+            Autonomie dans l'installation d'un poste de développer. <br>
+
+          </p>
+        </article>
+      </section>
+
+      <h2>Création du site web institutionnel d’une entreprise du secteur numérique <br> à destination de la génération
+        Alpha</h2>
+      <section class="website">
+        <img src="img/atos.png" alt="" class="atosimg">
+        <article class="articleProjet">
+          <p class="ps">Projet réalisé en trio</p>
+          <h4>Résumé du projet</h4>
+          <p>
+            Ce projet consiste à créer un site web institutionnel pour
+            une entreprise du secteur numérique, en
+            l'occurrence Atos, à destination de la génération Alpha.
+            Le projet comprend la réalisation d'un recueil de
+            besoins, puis la conception du site internet pour finir par
+            une présentation orale du site à nos clients
+          </p>
+          <h4>Compétences travaillées</h4>
+          <p>
+            Analyser un site et comprendre les besoins et attentes
+            des parties prenantes d'un projet. <br>
+            Maîtrise du language html css <br>
+            Présentation professionnelle d'une de nos créations à un client.
+          </p>
+
+          <br><br> <a href="https://gdhtom.github.io/ATOS/" target="_blank" class="lien">Le site est disponible juste
+            ici</a> .
+          </p>
+        </article>
+      </section>
+      <h2>Création d'un site web pour un client</h2>
+      <section class="woippy">
+        <aside class="asidewoippyimg">
+          <img src="img/echange_client.png" alt="" class="woippyimg">
+        </aside>
+        <article class="articleProjet">
+          <p class="ps">Projet réalisé en duo</p>
+
+          <h4>Résumé du projet</h4>
+          <p>
+            Ce projet est la réalisation d'un site internet dans
+            un contexte professionnel avec plusieurs entretiens
+            et un suivie de nos clients. <br>
+            Notre client était la mairie de Woippy (commune de Moselle)
+ 
+          </p>
+          <h4>Compétences travaillées</h4>
+          <p>
+           Comprendre les besoins clients, les interpréter et les réaliser <br>
+           Maitrise du language html css
+          </p>
+          <a href="https://gdhtom.github.io" target="_blank" class="lien">Le site est disponible juste ici</a> .
+          </p>
+
+        </article>
+      </section>
+    </article>
+
+  </main>
+  <a href="#haut"><img src="img/fleche.png" class="fleche" alt=""></a>
 
 
+  <!-- Barre des réseaux sociaux -->
+  <footer>
+    <p>Made By GDH "Tom Jochum"</p>
+  </footer>
+</body>
+
+</html>
